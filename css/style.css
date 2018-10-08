@@ -8528,6 +8528,7 @@ textarea.form-control {
   margin-bottom: 0; }
 
 .block-3 .image {
+  border-radius:20px;
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat; }
