@@ -1,6 +1,3 @@
-# hello-world
-prueba
-Igual tenemos esto un poco guarro
-Un poco solo
-me apetece un kebab
-
+# Portfolio
+Small portfolio of our group.
+Thanks to colorlib for allowing the use of their template: Beckham Muff under cc 3.0
