@@ -1,4 +1,289 @@
+@import url(https://fonts.googleapis.com/css?family=Lato);
+@import url(https://fonts.googleapis.com/css?family=Oswald);
+@import url(https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css);
 
+.members {
+    font-family: 'Lato', Arial, sans-serif;
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    margin: 10px;
+    min-width: 250px;
+    max-width: 310px;
+    width: 100%;
+    background-color: #ffffff;
+    color: #2B2B2B;
+    text-align: center;
+    font-size: 16px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+  }
+  
+  .members * {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  
+  .members .profile-image {
+    padding: 15% 10% 0;
+  }
+  
+  .members .profile-image img {
+    max-width: 100%;
+    vertical-align: top;
+    position: relative;
+    border-radius: 50%;
+    max-width: 40%;
+  }
+  
+  .members figcaption {
+    padding: 5% 10% 15%;
+  }
+  
+  .members h3 {
+    font-family: 'Oswald';
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
+    margin: 3px 0;
+  }
+  
+  .members h5 {
+    font-weight: 400;
+    margin: 0;
+    text-transform: uppercase;
+    color: #888;
+    letter-spacing: 1px;
+  }
+  
+  .members .icons i {
+    color: #999;
+    display: inline-block;
+    margin-right: 5px;
+    font-size: 1.5em;
+  }
+  
+  .members .icons i:hover {
+    color: #555;
+  }
+  
+  .members .icons i a {
+    text-decoration: none;
+  }
+
+/* Segundo ejemplo*/
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,500,800);
+@import url(https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css);
+figure.member2 {
+  font-family: 'Raleway', Arial, sans-serif;
+  position: relative;
+  overflow: hidden;
+  margin: 10px;
+  min-width: 220px;
+  max-width: 310px;
+  width: 100%;
+  background: #ffffff;
+  color: #000000;
+}
+figure.member2 * {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all 0.35s ease-in-out;
+  transition: all 0.35s ease-in-out;
+}
+figure.member2 img {
+  max-width: 100%;
+  position: relative;
+  display: block;
+}
+figure.member2:before {
+  position: absolute;
+  content: '';
+  height: 120%;
+  width: 150%;
+  z-index: 1;
+  top: -60%;
+  left: -60%;
+  background: rgba(255, 255, 255, 0.7);
+  border: 1px solid #fff;
+  border-radius: 50%;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+  -webkit-transform: skewX(-30deg) translateX(-20%);
+  transform: skewX(-30deg) translateX(-20%);
+  -webkit-box-shadow: 2px 0px 10px rgba(0, 0, 0, 0.5);
+  box-shadow: 2px 0px 10px rgba(0, 0, 0, 0.5);
+}
+figure.member2 figcaption {
+  padding-left: 30px;
+  position: absolute;
+  left: 0;
+  top: 30px;
+  width: 60%;
+  z-index: 1;
+  opacity: 0;
+}
+figure.member2 figcaption h2,
+figure.member2 figcaption p {
+  margin: 0;
+  text-align: left;
+  padding: 5px 0 0;
+  width: 100%;
+}
+figure.member2 figcaption h2 {
+  font-size: 1.4em;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+figure.member2 figcaption h2 span {
+  font-weight: 800;
+}
+figure.member2 figcaption p {
+  font-weight: 500;
+  font-size: 0.9em;
+  opacity: 0.8;
+}
+figure.member2 figcaption .icons {
+  width: 100%;
+  padding: 8px 0;
+}
+figure.member2 figcaption .icons i {
+  display: inline-block;
+  font-size: 20px;
+  background: #000000;
+  color: #ffffff;
+  opacity: 0;
+  margin-right: 5px;
+  height: 35px;
+  width: 35px;
+  text-align: center;
+  line-height: 35px;
+  border-radius: 50%;
+}
+figure.member2 figcaption a {
+  opacity: 0.7;
+}
+figure.member2 figcaption a:hover {
+  opacity: 1;
+}
+figure.member2 .position {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  text-align: right;
+  padding: 15px 30px;
+  font-size: 0.9em;
+  opacity: 1;
+  font-weight: 500;
+  color: #ffffff;
+  background: #000000;
+}
+figure.member2.blue .icons i {
+  background: #164666;
+}
+figure.member2.blue .position {
+  background: #20638f;
+}
+figure.member2.red .icons i {
+  background: #6d2018;
+}
+figure.member2.red .position {
+  background: #962d22;
+}
+figure.member2:hover figcaption,
+figure.member2.hover figcaption,
+figure.member2:hover .icons i,
+figure.member2.hover .icons i {
+  opacity: 1;
+  -webkit-transition-delay: 0.2s;
+  transition-delay: 0.2s;
+}
+figure.member2:hover:before,
+figure.member2.hover:before {
+  -webkit-transform: skewX(0deg) translateX(0px);
+  transform: skewX(0deg) translateX(0px);
+}
+
+/*Tercer ejemplo*/
+@import url(https://fonts.googleapis.com/css?family=Oswald);
+@import url(https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css);
+@import url(https://fonts.googleapis.com/css?family=Quattrocento);
+.snip1376 {
+  font-family: 'Quattrocento', Arial, sans-serif;
+  position: relative;
+  overflow: hidden;
+  margin: 10px;
+  min-width: 230px;
+  max-width: 315px;
+  width: 100%;
+  color: #141414;
+  text-align: left;
+  line-height: 1.4em;
+  font-size: 16px;
+}
+.snip1376 * {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.snip1376 img {
+  max-width: 100%;
+  vertical-align: top;
+}
+.snip1376 figcaption {
+  width: 100%;
+  background-color: #ffffff;
+  padding: 15px 25px 65px;
+  position: relative;
+}
+.snip1376 figcaption:before {
+  position: absolute;
+  content: '';
+  z-index: 2;
+  bottom: 100%;
+  left: 0;
+  width: 100%;
+  height: 80px;
+  background-image: -webkit-linear-gradient(top, transparent 0%, #ffffff 100%);
+  background-image: linear-gradient(to bottom, transparent 0%, #ffffff 100%);
+}
+.snip1376 h2,
+.snip1376 p {
+  margin: 0 0 10px;
+}
+.snip1376 h2 {
+  font-weight: 300;
+  font-size: 1.5em;
+  line-height: 1.2em;
+  font-family: 'Oswald', Arial, sans-serif;
+  text-transform: uppercase;
+}
+.snip1376 p {
+  font-size: 0.9em;
+  letter-spacing: 1px;
+  opacity: 0.9;
+}
+.snip1376 .icons {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: #e6e6e6;
+  width: 100%;
+  text-align: center;
+}
+.snip1376 i {
+  padding: 10px 5px;
+  display: inline-block;
+  font-size: 24px;
+  color: #141414;
+  opacity: 0.65;
+}
+.snip1376 i:hover {
+  opacity: 1;
+  -webkit-transition: all 0.35s ease;
+  transition: all 0.35s ease;
+}
+
+/*
 .thumbnail{
     border:0 none;
     
@@ -12,4 +297,4 @@
 .card-img-top{
     width: 100%;
     height: 200px;
-}
+}*/

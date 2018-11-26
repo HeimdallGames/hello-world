@@ -8,17 +8,25 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <!-- Latest compiled and minified JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    
+    <link rel="stylesheet" href="css/_header.css">
     <link rel="stylesheet" href="css/carouselFade.css">
     <link rel="stylesheet" href="css/thumbnails.css">
-
 </head>
 
 <body>
-<div class="page-header">
-    <h1>Heimdall Games</h1>
-    <h3>Keeping an eye in all</h3>
-    </div>
-    
+    <div class="MainContainer">
+
+        <div class="ParallaxContainer">
+          <h1>
+            Heimdall Games
+          </h1>
+        </div>
+      
+        <div class="ContentContainer">
+          <div class="Content">
+         
+      
     <!-- Carousel with games images-->
     <div class="container">
 
@@ -30,7 +38,7 @@
 
             <div class="carousel-inner">
 
-                <div class="item active">
+                <div class="item active ">
                     <img src="images/Chill.jpg" alt="Proyect 1" style="width:100%;">
                     <div class="carousel-caption">
                         <h3>First project</h3>
@@ -60,49 +68,52 @@
 
     </div>
 
-    <!--Thumbnails with the team -->
-    <div class="container">
-        <div class="row">
-            <div class="col-xs-6 col-md-4">
-                <div class="thumbnail">
-                    <img src="images/members/iagoCL.jpg" class="img-fluid img-thumbnail" alt="Iago Calvo">
-                    <p>My dream it's to make videogames and i'm going to work hard to do it.</p>
-                </div>
-            </div>
-            <div class="col-xs-6 col-md-4">
-                <div class="card">
-                    <img src="images/members/iagoCG.jpg" class="card-img-top" alt="Iago Cruz">
-                    <p>Working hard to make games for children to learn. Coffee is my best friend.</p>
-                </div>
-            </div>
+    <!--Ejemplo 1-->
+    <figure class="members">
+        <div class="profile-image">
+            <img src="images/members/iagoCG.jpg" alt="Iago Cruz García"/>
         </div>
-        <div class="row">
-            <div class="col-xs-6 col-md-4">
-                <div class="thumbnail">
-                    <img src="images/members/germanMG.jpg" class="img-responsive" alt="German">
-                    <p>I´ve always loved videogames. One day I´ll make others love them too.</p>
-                </div>
-            </div>
-            <div class="col-xs-6 col-md-4">
-                <div class="thumbnail">
-                    <img src="images/members/angelCG.jpg" class="img-responsive" alt="Angel">
-                    <p>Fell deeds awake... now for wrath... now for ruin and a red dawn!</p>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-xs-6 col-md-4">
-                <div class="thumbnail">
-                    <img src="images/members/javierMP.jpg" class="img-responsive" alt="German">
-                    <p>Fell deeds awake... now for wrath... now for ruin and a red dawn!</p>
-                </div>
-            </div>
+        <figcaption>
+            <h3>Iago Cruz</h3>
+            <h5>Web & Programmer</h5>
+            <p>Working hard to make games for children to learn. Coffee is my best friend.</p>
+            <div class="icons"><a href="#"><i class="ion-social-reddit"></i></a>
+                <a href="#"> <i class="ion-social-twitter"></i></a>
+                <a href="#"> <i class="ion-social-vimeo"></i></a>
+              </div>
+        </figcaption>
+    </figure>
 
-        </div>
-    </div>
+    <!--Ejemplo 2-->
+    <figure class="member2">
+        <img src="images/members/iagoCG.jpg" alt="Iago Cruz García" />
+        <figcaption>
+          <h2>Iago <span>Cruz</span></h2>
+          <p>Working hard to make games for children to learn. Coffee is my best friend.</p>
+          <div class="icons2"><a href="#"><i class="ion-ios-home"></i></a><a href="#">
+              <i class="ion-email-unread"></i></a>
+              <a href="#"><i class="ion-ios-star"></i></a>
+            </div>
+        </figcaption>
+        <div class="position">Programmer</div>
+      </figure>
+
+    <!--Ejemplo 3-->
+    <figure class="snip1376 hover">
+        <img src="images/members/iagoCG.jpg" alt="Iago Cruz Garcia" />
+        <figcaption>
+          <h2>Iago Cruz</h2>
+          <p>Working hard to make games for children to learn. Coffee is my best friend.</p>
+          <div class="icons"><a href="#"><i class="ion-social-reddit-outline"></i></a>
+            <a href="#"> <i class="ion-social-twitter-outline"></i></a>
+            <a href="#"> <i class="ion-social-vimeo-outline"></i></a>
+          </div>
+        </figcaption>
+      </figure>
 
 </body>
-    
+
+
 <footer style="background-color: cadetblue" class="footer">
     <div class="container">
         <div class="row">
@@ -123,5 +134,7 @@
     </div>
 
 </footer>
-
+</div>
+</div>
+</div>
 </html>
