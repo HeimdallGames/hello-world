@@ -24,6 +24,9 @@
   z-index: 2;
 }
 
+.carousel-caption:hover{
+cursor:pointer;
+}
 
 /********************************/
 /*       Slides backgrounds     */
