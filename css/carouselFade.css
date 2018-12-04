@@ -1,3 +1,8 @@
+#projectCarousel{
+  width: 80%;
+  margin: 0 auto;
+}
+
 .carousel-fade .carousel-inner .item {
   -webkit-transition-property: opacity;
   transition-property: opacity;
