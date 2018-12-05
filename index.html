@@ -2,151 +2,202 @@
 <meta charset="UTF-8">
 
 <head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
     <!--JQuery-->
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
         crossorigin="anonymous"></script>
-    <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
-        crossorigin="anonymous">
-    <!-- Latest compiled and minified JavaScript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
         crossorigin="anonymous"></script>
 
-    <link rel="stylesheet" href="css/carouselFade.css">
-    <link rel="stylesheet" href="css/thumbnails.css">
-    <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/body.css">
+    <link rel="stylesheet" href="css/footer.css">
     <script src="js/carousel.js"></script>
+
 </head>
 
 <body>
-    <div class="page-header text-center">
-            <h1>
-                Heimdall Games
-            </h1>
-    </div>
-                <!-- Carousel with games images-->
-                <div class="container">
+    <nav class="navbar fixed-top  navbar-expand-lg navbar-dark ">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03"
+            aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <a class="navbar-brand" style="color:#ccc" href="#">HeimdallGames</a>
 
-                    <div id="projectCarousel" class="carousel fade-carousel slide carousel-fade" data-ride="carousel"
-                        data-interval="5000">
-                        <ol class="carousel-indicators">
-                            <li data-target="#projectCarousel" data-slide-to="0" class="active"></li>
-                            <li data-target="#projectCarousel" data-slide-to="1"></li>
-                        </ol>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                <li class="nav-item active">
+                    <a class="nav-link" style="color:#ccc" href="#carouselGames">Games <span class="sr-only"></span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" style="color:#ccc" href="#who">Who</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" style="color:#ccc" href="#members">Members</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" style="color:#ccc" href="#footer">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
 
-                        <div class="carousel-inner">
-
-                            <div class="item active ">
-                                <img src="images/Chill.jpg" alt="Proyect 1" style="width:100%;">
-                                <div class="carousel-caption" id="shottenSamurai">
-                                    <h3>Shotten Samurai</h3>
-                                    <p>Fast paced, vertical scroll, arcade runner. Try to climb that f-tower</p>
-                                </div>
-                            </div>
-
-                            <div class="item">
-                                <img src="images/Chill2.jpg" alt="Proyect 2" style="width:100%;">
-                                <div class="carousel-caption">
-                                    <h3>Second project</h3>
-                                    <p>A Unity/WebGL game!</p>
-                                </div>
-                            </div>
-
-                        </div>
-
-                        <a class="left carousel-control" href="#projectCarousel" data-slide="prev">
-                            <span class="glyphicon glyphicon-chevron-left"></span>
-                            <span class="sr-only">Previous</span>
-                        </a>
-                        <a class="right carousel-control" href="#projectCarousel" data-slide="next">
-                            <span class="glyphicon glyphicon-chevron-right"></span>
-                            <span class="sr-only">Next</span>
-                        </a>
-                    </div>
-
+    <div id="carouselGames" class="carousel slide carousel-fade" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#carouselGames" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselGames" data-slide-to="1"></li>
+        </ol>
+        <div class="carousel-inner">
+            <div id="1" class="carousel-item active">
+                <img class="d-block w-100" src="images/shoten2.png" alt="First slide">
+                <div class="carousel-caption desktop">
+                    <span class="shotenSamurai">
+                        <h5>Shotten Samurai</h5>
+                        <p>Fast paced, vertical scroll, arcade runner. Try to climb that f-tower</p>
+                    </span>
+                    <span id="shotenGithub">
+                        <p>Link to Github</p>
+                    </span>
                 </div>
-<div class="container">
-                <div class="row">
-                    <div class="col-12">
-                        <figure class="member2">
-                            <img src="images/members/iagoCG.jpg" alt="Iago Cruz García" />
-                            <figcaption>
-                                <h2>Iago <span>Cruz</span></h2>
-                                <p>Working hard to make games. Coffee is my best friend</p>
-                            </figcaption>
-                            <div class="position">Programmer</div>
-                        </figure>
-                    </div>
-                    <div class="col-12">
-                    <figure class="member2">
-                        <img src="images/members/iagoCL.jpg" alt="Iago Cruz García" />
-                        <figcaption>
-                            <h2>Iago <span>Calvo</span></h2>
-                            <p>Working hard to make games. Coffee is my best friend</p>
-                        </figcaption>
-                        <div class="position">Programmer/3D Artist</div>
-                    </figure>
-                </div>
-                    <figure class="member2">
-                        <img src="images/members/javierMP.jpg" alt="Iago Cruz García" />
-                        <figcaption>
-                            <h2>Javier <span>Martínez</span></h2>
-                            <p>Working hard to make games. Coffee is my best friend</p>
-                        </figcaption>
-                        <div class="position">Game Designer</div>
-                    </figure>
-
-                    <figure class="member2">
-                        <img src="images/members/germanMG.jpg" alt="Iago Cruz García" />
-                        <figcaption>
-                            <h2>Germán <span>Matilla</span></h2>
-                            <p>Working hard to make games. Coffee is my best friend</p>
-                        </figcaption>
-                        <div class="position">Artist</div>
-                    </figure>
-
-                    <figure class="member2">
-                        <img src="images/members/angelCG.jpg" alt="Iago Cruz García" />
-                        <figcaption>
-                            <h2>Ángel <span>Cabanilles</span></h2>
-                            <p>Working hard to make games. Coffee is my best friend</p>
-                        </figcaption>
-                        <div class="position">2D Animator/Programmer</div>
-                    </figure>
-                </div>
-</div>
-            </body> 
-            
-            
-<!-- Footer -->
-	<section id="footer">
-            <div class="container">
-                <div class="row text-left text-xs-left text-sm-left text-md-left">
-                    <div class="col-xs-12 col-sm-12 col-md-12">
-                        <h5>Quick links</h5>
-                        <ul class="list-unstyled quick-links">
-                            <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Home</a></li>
-                            <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Github</a></li>
-                        </ul>
-                    </div>
-                    
-                    
-                </div>
-                <div class="row">
-                    <div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-5">
-                        <ul class="list-unstyled list-inline social text-center">
-                            <li class="list-inline-item"><a href="https://www.facebook.com/heimdallGamesWeb"><i class="fa fa-facebook"></i></a></li>
-                            <li class="list-inline-item"><a href="https://twitter.com/gamesHeimdall"><i class="fa fa-twitter"></i></a></li>
-                            <li class="list-inline-item"><a href="mailto:juegoswebestudio@gmail.com" target="_blank"><i class="fa fa-envelope"></i></a></li>
-                        </ul>
-                    </div>
-                    </hr>
+                <div class="carousel-caption mobile">
+                    <span class="shotenSamurai">
+                        <h5>Shotten Samurai</h5>
+                    </span>
                 </div>
             </div>
-        </section>
+            <div id="2" class="carousel-item">
+                <img class="d-block w-100" src="images/shoten2.png" alt="Second slide">
+                <div class="carousel-caption desktop">
+                    <span class="salvation">
+                        <h5>Roads to Salvation</h5>
+                        <p>Choose your path, drive through it and run away from your evil...or good?</p>
+                    </span>
+                    <span id="salvationGithub">
+                        <p>Link to Github</p>
+                    </span>
+                </div>
+                <div class="carousel-caption mobile">
+                    <span class="salvation">
+                        <h5>Roads to Salvation</h5>
+                    </span>
+                </div>
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselGames" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselGames" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+    <br>
+    <div class="container">
+        <div class="embed-responsive embed-responsive-16by9">
+            <iframe id="video" class="embed-responsive-item" src="https://www.youtube.com/embed/BfOdWSiyWoc?rel=0"
+                allowfullscreen></iframe>
         </div>
     </div>
+
+    <br>
+    <div class="jumbotron" id="who">
+        <h3>Who we are?</h2>
+            <h4>We are <strong>Heimdall Games</strong>, a small studio from Madrid, working hard to make games for
+                everyone to enjoy. Keep it simple but make it feel good its our motto.
+        </h3>
     </div>
+    <br>
+    <div class="jumbotron" id="members">
+        <h3 class="text-center">Members</h3>
+        <br>
+        <div class="card-deck">
+            <div class="card" style="width:100%;">
+
+                <div class="card-header"><strong>Programmer/Web Designer</strong></div>
+                <img class="card-img-top" src="images/members/iagoCG.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">Iago Cruz</h5>
+                    <p class="card-text">Making games for everyone. Coffee is my best friend</p>
+                    <a href="https://github.com/cruzIago" class="btn btn-primary">Github</a>
+                </div>
+            </div>
+            <div class="card" style="width:100%">
+                    <div class="card-header"><strong>Programmer</strong></div>
+                <img class="card-img-top" src="images/members/iagoCL.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">Iago Calvo</h5>
+                    <p class="card-text">My dream it's to make videogames and i'm going to work hard to do it.</p>
+                    <a href="https://github.com/iagoCL" class="btn btn-primary">Github</a>
+                </div>
+            </div>
+            <div class="card" style="width:100%">
+                    <div class="card-header"><strong>Game Designer</strong></div>
+                <img class="card-img-top" src="images/members/javierMP.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">Javier Martínez</h5>
+                    <p class="card-text">Love music, comics and writing. Improving is my goal.</p>
+                    <a href="https://github.com/JaviBJ99" class="btn btn-primary">Github</a>
+                </div>
+            </div>
+            <div class="card" style="width:100%">
+                    <div class="card-header"><strong>Artist</strong></div>
+                <img class="card-img-top" src="images/members/germanMG.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">Germán Matilla</h5>
+                    <p class="card-text">I´ve always loved videogames. One day I´ll make others love them too.</p>
+                    <a href="https://github.com/MaJiGerman" class="btn btn-primary">Github</a>
+                </div>
+
+            </div>
+            <div class="card" style="width:100%">
+                    <div class="card-header"><strong>2D Animator/Artist</strong></div>
+                <img class="card-img-top" src="images/members/angelCG.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">Ángel Cabanilles</h5>
+                    <p class="card-text">Fell deeds awake... now for wrath... now for ruin and a red dawn!</p>
+                    <a href="https://github.com/Angelitorl" class="btn btn-primary">Github</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+
+<!-- Footer -->
+<section id="footer">
+    <div class="container">
+        <div class="row text-left text-xs-left text-sm-left text-md-left">
+            <div class="col-xs-12 col-sm-12 col-md-12">
+                <h5>Quick links</h5>
+                <ul class="list-unstyled quick-links">
+                    <li><a href="#"><i class="fa fa-angle-double-right"></i>Home</a></li>
+                    <li><a href="https://github.com/HeimdallGames/shotenSamurai"><i class="fa fa-angle-double-right"></i>Github</a></li>
+                </ul>
+            </div>
+
+
+        </div>
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-5">
+                <ul class="list-unstyled list-inline social text-center">
+                    <li class="list-inline-item"><a href="https://www.facebook.com/heimdallGamesWeb"><i class="fa fa-facebook"></i></a></li>
+                    <li class="list-inline-item"><a href="https://twitter.com/gamesHeimdall"><i class="fa fa-twitter"></i></a></li>
+                    <li class="list-inline-item"><a href="mailto:juegoswebestudio@gmail.com" target="_blank"><i class="fa fa-envelope"></i></a></li>
+                </ul>
+            </div>
+            </hr>
+        </div>
+    </div>
+</section>
+</div>
+</div>
+</div>
 
 </html>
