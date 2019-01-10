@@ -17,6 +17,23 @@ $( document ).ready(function() {
         }
     });
 
+    $(".salvation").click(function(){
+        var ventana = window.open("https://heimdallgames.github.io/RoadsOfSalvaltion/");
+        if(ventana){
+            ventana.focus();
+        }else{
+            alert("Let pop-ups open just for this!");
+        }
+    });
+    $("#salvationGithub").click(function(){
+        var ventana = window.open("https://github.com/HeimdallGames/RoadsOfSalvaltion");
+        if(ventana){
+            ventana.focus();
+        }else{
+            alert("Let pop-ups open just for this!");
+        }
+    });
+
     $( '.navbar-nav a' ).on( 'click', function () {
         $( '.navbar-nav' ).find( 'li.active' ).removeClass( 'active' );
         $( this ).parent( 'li' ).addClass( 'active' );
