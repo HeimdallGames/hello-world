@@ -33,6 +33,14 @@ body {
    cursor: pointer;
 }
 
+.salvation:hover{
+   cursor:pointer;
+}
+
+#salvationGithub{
+   cursor:pointer;
+}
+
 .navbar{
    background-color: #313131;
 }

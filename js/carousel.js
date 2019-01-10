@@ -43,11 +43,11 @@ $( document ).ready(function() {
         var id = ev.relatedTarget.id;
         switch (id) {
           case "1":
-          $('#video').prop('src', "https://www.youtube.com/embed/BfOdWSiyWoc?rel=0");
+          $('#video').prop('src', "https://www.youtube.com/embed/R1V1IlVSWDw?rel=0");
             break;
           case "2":
           
-          $('#video').prop('src', "https://www.youtube.com/embed/txTqtm58AqM?rel=0");
+          $('#video').prop('src', "https://www.youtube.com/embed/R1V1IlVSWDw?rel=0");
             break;
           default:
           
